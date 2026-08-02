@@ -12,7 +12,9 @@
         header p { font-size: 14px; opacity: 0.9; }
         .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
         .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
-        .noticia img, .noticia video { width: 100%; border-radius: 8px; margin: 15px 0; }
+        .noticia img, .noticia video, .noticia iframe { width: 100%; border-radius: 8px; margin: 15px 0; }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 15px 0; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
         .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
         .data { color: #888; font-size: 13px; margin-bottom: 10px; }
         .texto-noticia { 
@@ -48,8 +50,12 @@
                 <div class="noticia">
                     <h2>${n.titulo}</h2>
                     <div class="data">${n.data}</div>
-                    ${n.imagem ? `<img src="${n.imagem}">` : ''}
-                    ${n.video ? `<video src="${n.video}" controls playsinline></video>` : ''}
+                    ${n.imagem ? `<img src="${n.imagem}" alt="${n.titulo}">` : ''}
+                    ${n.video ? 
+                        n.video.includes('youtube.com') || n.video.includes('youtu.be') 
+                        ? `<div class="video-wrapper"><iframe src="${n.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>` 
+                        : `<video src="${n.video}" controls playsinline></video>` 
+                        : ''}
                     <div class="texto-noticia">${n.texto.replace(/\n/g, '<br>')}</div>
                 </div>
             `).join('');
