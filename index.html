@@ -9,11 +9,13 @@
         body { font-family: 'Segoe UI', Arial; background: #e6f7ff; }
         header { background: linear-gradient(135deg, #0066cc, #004a99); color: white; padding: 25px 15px; text-align: center; }
         header h1 { font-size: 28px; }
+        header p { font-size: 14px; opacity: 0.9; }
         .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
         .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
-        .noticia img { width: 100%; border-radius: 8px; margin: 15px 0; }
+        .noticia img, .noticia video { width: 100%; border-radius: 8px; margin: 15px 0; }
         .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
         .data { color: #888; font-size: 13px; margin-bottom: 10px; }
+        .noticia p { text-align: justify; line-height: 1.7; color: #333; font-size: 16px; }
         footer { text-align: center; padding: 20px; color: #777; font-size: 12px; }
     </style>
 </head>
@@ -40,6 +42,7 @@
                     <h2>${n.titulo}</h2>
                     <div class="data">${n.data}</div>
                     ${n.imagem ? `<img src="${n.imagem}">` : ''}
+                    ${n.video ? `<video src="${n.video}" controls></video>` : ''}
                     <p>${n.texto.replace(/\n/g, '<br>')}</p>
                 </div>
             `).join('');
