@@ -15,7 +15,14 @@
         .noticia img, .noticia video { width: 100%; border-radius: 8px; margin: 15px 0; }
         .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
         .data { color: #888; font-size: 13px; margin-bottom: 10px; }
-        .noticia p { text-align: justify; line-height: 1.7; color: #333; font-size: 16px; }
+        .texto-noticia { 
+            text-align: justify !important; 
+            text-justify: inter-word !important;
+            line-height: 1.7 !important; 
+            color: #333 !important; 
+            font-size: 16px !important; 
+            display: block;
+        }
         footer { text-align: center; padding: 20px; color: #777; font-size: 12px; }
     </style>
 </head>
@@ -42,8 +49,8 @@
                     <h2>${n.titulo}</h2>
                     <div class="data">${n.data}</div>
                     ${n.imagem ? `<img src="${n.imagem}">` : ''}
-                    ${n.video ? `<video src="${n.video}" controls></video>` : ''}
-                    <p>${n.texto.replace(/\n/g, '<br>')}</p>
+                    ${n.video ? `<video src="${n.video}" controls playsinline></video>` : ''}
+                    <div class="texto-noticia">${n.texto.replace(/\n/g, '<br>')}</div>
                 </div>
             `).join('');
         });
