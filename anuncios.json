@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "ativo": true,
+    "titulo": "Farmácia Popular",
+    "texto": "Remédios, perfumaria e entrega grátis no centro",
+    "imagem": "Banners/farmacia-popular.jpg",
+    "telefone": "91988887777",
+    "botao": "Falar no WhatsApp"
+  }
+]
