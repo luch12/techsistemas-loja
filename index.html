@@ -10,19 +10,20 @@
         header { background: linear-gradient(135deg, #0066cc, #004a99); color: white; padding: 25px 15px; text-align: center; }
         header h1 { font-size: 28px; }
         header p { font-size: 14px; opacity: 0.9; }
-        .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
-        .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
-        .noticia img, .noticia video, .noticia iframe { width: 100%; border-radius: 8px; margin: 15px 0; }
-        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 15px 0; }
-        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
-        .data { color: #888; font-size: 13px; margin-bottom: 10px; }
-        .texto-noticia { 
-            text-align: justify !important; 
-            text-justify: inter-word !important;
-            line-height: 1.7 !important; 
-            color: #333 !important; 
-            font-size: 16px !important; 
+       .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
+       .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
+       .noticia img,.noticia video,.noticia iframe { width: 100%; border-radius: 8px; margin: 15px 0; }
+       .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 15px 0; }
+       .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+       .social-card { display: block; text-decoration: none; border: 2px solid #eee; border-radius: 8px; padding: 10px; margin: 15px 0; }
+       .social-card p { text-align:center; color:#0066cc; font-weight:bold; margin-top:8px; }
+       .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
+       .data { color: #888; font-size: 13px; margin-bottom: 10px; }
+       .texto-noticia {
+            text-align: justify!important;
+            line-height: 1.7!important;
+            color: #333!important;
+            font-size: 16px!important;
             display: block;
         }
         footer { text-align: center; padding: 20px; color: #777; font-size: 12px; }
@@ -43,19 +44,48 @@
     </footer>
 
     <script>
+        function getVideoEmbed(url) {
+            if(!url) return '';
+
+            // YOUTUBE
+            if(url.includes('youtube.com') || url.includes('youtu.be')) {
+                let videoId = url.split('v=')[1] || url.split('/').pop();
+                if(videoId.includes('&')) videoId = videoId.split('&')[0];
+                if(videoId.includes('shorts/')) videoId = videoId.split('shorts/')[1];
+                return `<div class="video-wrapper"><iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
+            }
+
+            // TIKTOK e KWAI
+            if(url.includes('tiktok.com') || url.includes('kwai.com')) {
+                return `<div class="video-wrapper"><iframe src="${url}" frameborder="0" allowfullscreen></iframe></div>`;
+            }
+
+            // INSTAGRAM, FACEBOOK, TWITTER/X - Abre no app
+            if(url.includes('instagram.com') || url.includes('facebook.com') || url.includes('x.com') || url.includes('twitter.com')) {
+                let rede = 'Rede Social';
+                if(url.includes('instagram')) rede = 'Instagram';
+                if(url.includes('facebook')) rede = 'Facebook';
+                if(url.includes('twitter') || url.includes('x.com')) rede = 'X/Twitter';
+
+                return `<a href="${url}" target="_blank" class="social-card">
+                    <img src="https://via.placeholder.com/1280x720/0066cc/FFFFFF?text=Assista+no+${rede}" style="width:100%; border-radius:8px;">
+                    <p>▶️ Toque para assistir no ${rede}</p>
+                </a>`;
+            }
+
+            // VIDEO MP4 NORMAL
+            return `<video src="${url}" controls playsinline style="width:100%"></video>`;
+        }
+
         fetch('noticias.json?v=' + new Date().getTime())
-        .then(res => res.json())
-        .then(dados => {
+       .then(res => res.json())
+       .then(dados => {
             document.getElementById('noticias').innerHTML = dados.map(n => `
                 <div class="noticia">
                     <h2>${n.titulo}</h2>
                     <div class="data">${n.data}</div>
-                    ${n.imagem ? `<img src="${n.imagem}" alt="${n.titulo}">` : ''}
-                    ${n.video ? 
-                        n.video.includes('youtube.com') || n.video.includes('youtu.be') 
-                        ? `<div class="video-wrapper"><iframe src="${n.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>` 
-                        : `<video src="${n.video}" controls playsinline></video>` 
-                        : ''}
+                    ${n.imagem? `<img src="${n.imagem}" alt="${n.titulo}">` : ''}
+                    ${getVideoEmbed(n.video)}
                     <div class="texto-noticia">${n.texto.replace(/\n/g, '<br>')}</div>
                 </div>
             `).join('');
