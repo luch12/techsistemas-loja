@@ -10,22 +10,32 @@
         header { background: linear-gradient(135deg, #0066cc, #004a99); color: white; padding: 25px 15px; text-align: center; }
         header h1 { font-size: 28px; }
         header p { font-size: 14px; opacity: 0.9; }
-       .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
-       .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
-       .noticia img,.noticia video,.noticia iframe { width: 100%; border-radius: 8px; margin: 15px 0; }
-       .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 15px 0; }
-       .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-       .social-card { display: block; text-decoration: none; border: 2px solid #eee; border-radius: 8px; padding: 10px; margin: 15px 0; }
-       .social-card p { text-align:center; color:#0066cc; font-weight:bold; margin-top:8px; }
-       .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
-       .data { color: #888; font-size: 13px; margin-bottom: 10px; }
-       .texto-noticia {
+      .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
+      .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
+      .noticia img,.noticia video,.noticia iframe { width: 100%; border-radius: 8px; margin: 15px 0; }
+      .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 15px 0; }
+      .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+      .social-card { display: block; text-decoration: none; border: 2px solid #eee; border-radius: 8px; padding: 10px; margin: 15px 0; }
+      .social-card p { text-align:center; color:#0066cc; font-weight:bold; margin-top:8px; }
+      .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
+      .data { color: #888; font-size: 13px; margin-bottom: 10px; }
+      .texto-noticia {
             text-align: justify!important;
             line-height: 1.7!important;
             color: #333!important;
             font-size: 16px!important;
             display: block;
         }
+
+        /* ESTILO DO ANÚNCIO */
+       .anuncio-box { background: white; padding: 15px; margin: 25px 0; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); border-left: 4px solid #0066cc; }
+       .anuncio-tag { font-size: 10px; color: #888; text-align: center; margin-bottom: 8px; letter-spacing: 1px; }
+       .anuncio-img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+       .anuncio-titulo { color: #0066cc; text-align: center; font-size: 18px; margin-bottom: 5px; }
+       .anuncio-texto { text-align: center; color: #333; margin: 8px 0 12px; font-size: 14px; }
+       .anuncio-btn { display: block; background: #0066cc; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+       .anuncio-btn:hover { background: #004a99; }
+
         footer { text-align: center; padding: 20px; color: #777; font-size: 12px; }
     </style>
 </head>
@@ -77,18 +87,46 @@
             return `<video src="${url}" controls playsinline style="width:100%"></video>`;
         }
 
-        fetch('noticias.json?v=' + new Date().getTime())
-       .then(res => res.json())
-       .then(dados => {
-            document.getElementById('noticias').innerHTML = dados.map(n => `
-                <div class="noticia">
-                    <h2>${n.titulo}</h2>
-                    <div class="data">${n.data}</div>
-                    ${n.imagem? `<img src="${n.imagem}" alt="${n.titulo}">` : ''}
-                    ${getVideoEmbed(n.video)}
-                    <div class="texto-noticia">${n.texto.replace(/\n/g, '<br>')}</div>
+        function getAnuncioHTML(anuncio) {
+            if(!anuncio ||!anuncio.ativo) return '';
+            return `
+                <div class="anuncio-box">
+                    <div class="anuncio-tag">PUBLICIDADE</div>
+                    <img src="${anuncio.imagem}" class="anuncio-img" alt="${anuncio.titulo}">
+                    <h3 class="anuncio-titulo">${anuncio.titulo}</h3>
+                    <p class="anuncio-texto">${anuncio.texto}</p>
+                    <a href="tel:${anuncio.telefone}" class="anuncio-btn">📞 ${anuncio.botao || 'Ligar Agora'}</a>
                 </div>
-            `).join('');
+            `;
+        }
+
+        // Carrega notícias E anúncios
+        Promise.all([
+            fetch('noticias.json?v=' + new Date().getTime()).then(res => res.json()),
+            fetch('anuncios.json?v=' + new Date().getTime()).then(res => res.json()).catch(() => [])
+        ])
+      .then(([noticias, anuncios]) => {
+            let html = '';
+            noticias.forEach((n, i) => {
+                html += `
+                    <div class="noticia">
+                        <h2>${n.titulo}</h2>
+                        <div class="data">${n.data}</div>
+                        ${n.imagem? `<img src="${n.imagem}" alt="${n.titulo}">` : ''}
+                        ${getVideoEmbed(n.video)}
+                        <div class="texto-noticia">${n.texto.replace(/\n/g, '<br>')}</div>
+                    </div>
+                `;
+
+                // Insere anúncio depois da 2ª e 5ª notícia
+                if(i === 1 && anuncios[0]) html += getAnuncioHTML(anuncios[0]);
+                if(i === 4 && anuncios[1]) html += getAnuncioHTML(anuncios[1]);
+            });
+
+            // Anúncio no final
+            if(anuncios[2]) html += getAnuncioHTML(anuncios[2]);
+
+            document.getElementById('noticias').innerHTML = html;
         });
     </script>
 </body>
