@@ -1,11 +1,11 @@
 [
   {
-    "id": 1,
-    "ativo": true,
-    "titulo": "Farmácia Popular",
-    "texto": "Remédios, perfumaria e entrega grátis no centro",
-    "imagem": "Banners/farmacia-popular.jpg",
-    "telefone": "91988887777",
-    "botao": "Falar no WhatsApp"
+  "id": 99,
+  "ativo": true,
+  "titulo": "Anuncie no Guia Salvaterra",
+  "texto": "Taxa: R$15 por mês. Divulgue seu comércio para toda Salvaterra",
+  "imagem": "Banners/anuncie-aqui.jpg",
+  "telefone": "5591984702168",
+  "botao": "Falar no WhatsApp"
   }
 ]
