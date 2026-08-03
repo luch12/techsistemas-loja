@@ -10,16 +10,16 @@
         header { background: linear-gradient(135deg, #0066cc, #004a99); color: white; padding: 25px 15px; text-align: center; }
         header h1 { font-size: 28px; }
         header p { font-size: 14px; opacity: 0.9; }
-      .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
-      .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
-      .noticia img,.noticia video,.noticia iframe { width: 100%; border-radius: 8px; margin: 15px 0; }
-      .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 15px 0; }
-      .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-      .social-card { display: block; text-decoration: none; border: 2px solid #eee; border-radius: 8px; padding: 10px; margin: 15px 0; }
-      .social-card p { text-align:center; color:#0066cc; font-weight:bold; margin-top:8px; }
-      .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
-      .data { color: #888; font-size: 13px; margin-bottom: 10px; }
-      .texto-noticia {
+     .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
+     .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0,08); }
+     .noticia img,.noticia video,.noticia iframe { width: 100%; border-radius: 8px; margin: 15px 0; }
+     .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 15px 0; }
+     .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+     .social-card { display: block; text-decoration: none; border: 2px solid #eee; border-radius: 8px; padding: 10px; margin: 15px 0; }
+     .social-card p { text-align:center; color:#0066cc; font-weight:bold; margin-top:8px; }
+     .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
+     .data { color: #888; font-size: 13px; margin-bottom: 10px; }
+     .texto-noticia {
             text-align: justify!important;
             line-height: 1.7!important;
             color: #333!important;
@@ -28,13 +28,13 @@
         }
 
         /* ESTILO DO ANÚNCIO */
-       .anuncio-box { background: white; padding: 15px; margin: 25px 0; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); border-left: 4px solid #0066cc; }
-       .anuncio-tag { font-size: 10px; color: #888; text-align: center; margin-bottom: 8px; letter-spacing: 1px; }
-       .anuncio-img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
-       .anuncio-titulo { color: #0066cc; text-align: center; font-size: 18px; margin-bottom: 5px; }
-       .anuncio-texto { text-align: center; color: #333; margin: 8px 0 12px; font-size: 14px; }
-       .anuncio-btn { display: block; background: #0066cc; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; }
-       .anuncio-btn:hover { background: #004a99; }
+      .anuncio-box { background: white; padding: 15px; margin: 25px 0; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); border-left: 4px solid #25D366; }
+      .anuncio-tag { font-size: 10px; color: #888; text-align: center; margin-bottom: 8px; letter-spacing: 1px; }
+      .anuncio-img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+      .anuncio-titulo { color: #0066cc; text-align: center; font-size: 18px; margin-bottom: 5px; }
+      .anuncio-texto { text-align: center; color: #333; margin: 8px 0 12px; font-size: 14px; }
+      .anuncio-btn { display: block; background: #25D366; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+      .anuncio-btn:hover { background: #128C7E; }
 
         footer { text-align: center; padding: 20px; color: #777; font-size: 12px; }
     </style>
@@ -70,7 +70,7 @@
                 return `<div class="video-wrapper"><iframe src="${url}" frameborder="0" allowfullscreen></iframe></div>`;
             }
 
-            // INSTAGRAM, FACEBOOK, TWITTER/X - Abre no app
+            // INSTAGRAM, FACEBOOK, TWITTER/X - Abre no app e não dá erro
             if(url.includes('instagram.com') || url.includes('facebook.com') || url.includes('x.com') || url.includes('twitter.com')) {
                 let rede = 'Rede Social';
                 if(url.includes('instagram')) rede = 'Instagram';
@@ -89,13 +89,17 @@
 
         function getAnuncioHTML(anuncio) {
             if(!anuncio ||!anuncio.ativo) return '';
+
+            // Link direto pro WhatsApp usando o número do JSON
+            const linkWhats = `https://wa.me/${anuncio.telefone}?text=Olá! Vi seu anúncio no Guia Salvaterra e quero mais informações.`;
+
             return `
                 <div class="anuncio-box">
                     <div class="anuncio-tag">PUBLICIDADE</div>
                     <img src="${anuncio.imagem}" class="anuncio-img" alt="${anuncio.titulo}">
                     <h3 class="anuncio-titulo">${anuncio.titulo}</h3>
                     <p class="anuncio-texto">${anuncio.texto}</p>
-                    <a href="tel:${anuncio.telefone}" class="anuncio-btn">📞 ${anuncio.botao || 'Ligar Agora'}</a>
+                    <a href="${linkWhats}" target="_blank" class="anuncio-btn">💬 ${anuncio.botao || 'Falar no WhatsApp'}</a>
                 </div>
             `;
         }
@@ -105,7 +109,7 @@
             fetch('noticias.json?v=' + new Date().getTime()).then(res => res.json()),
             fetch('anuncios.json?v=' + new Date().getTime()).then(res => res.json()).catch(() => [])
         ])
-      .then(([noticias, anuncios]) => {
+     .then(([noticias, anuncios]) => {
             let html = '';
             noticias.forEach((n, i) => {
                 html += `
@@ -127,6 +131,8 @@
             if(anuncios[2]) html += getAnuncioHTML(anuncios[2]);
 
             document.getElementById('noticias').innerHTML = html;
+        }).catch(err => {
+            document.getElementById('noticias').innerHTML = '<p style="text-align:center; padding:40px; color:red;">Erro ao carregar notícias. Verifique sua conexão.</p>';
         });
     </script>
 </body>
