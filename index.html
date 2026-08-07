@@ -11,12 +11,11 @@
         header h1 { font-size: 24px; }
         header p { font-size: 13px; opacity: 0.9; }
 
-        /* ABAS */
+        /* ABAS — escondidas por padrão quando vem do app */
         .tabs {
-            display: flex;
+            display: none;
             background: #004a99;
             overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
         }
         .tab {
             flex: 1;
@@ -38,6 +37,11 @@
             background: rgba(255,255,255,0.1);
         }
 
+        /* Quando NÃO vem do app, mostra as abas */
+        body.modo-site .tabs {
+            display: flex;
+        }
+
         .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
         .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
         .noticia img,.noticia video,.noticia iframe { width: 100%; border-radius: 8px; margin: 15px 0; }
@@ -49,7 +53,7 @@
         .data { color: #888; font-size: 13px; margin-bottom: 10px; }
         .texto-noticia { text-align: justify!important; line-height: 1.7!important; color: #333!important; font-size: 16px!important; display: block; }
 
-        /* CARD DE SERVIÇO (Comer/Mototaxi/Taxi) */
+        /* CARD DE SERVIÇO */
         .servico-card { background: white; padding: 16px; margin-bottom: 15px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; gap: 14px; align-items: center; }
         .servico-card img { width: 80px; height: 80px; border-radius: 10px; object-fit: cover; flex-shrink: 0; }
         .servico-info { flex: 1; }
@@ -74,7 +78,7 @@
         <p>Tudo sobre a Ilha do Marajó</p>
     </header>
 
-    <!-- ABAS -->
+    <!-- ABAS (só aparecem no modo site) -->
     <div class="tabs">
         <button class="tab active" onclick="mudarAba('noticias')">📰 Notícias</button>
         <button class="tab" onclick="mudarAba('comer')">🍽️ Comer</button>
@@ -90,6 +94,7 @@
 
     <script>
         let abaAtual = 'noticias';
+        let modoApp = false;
 
         function getParametroURL(nome) {
             const params = new URLSearchParams(window.location.search);
@@ -99,7 +104,10 @@
         function mudarAba(aba) {
             abaAtual = aba;
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.querySelector(`.tab:nth-child(${['noticias','comer','mototaxi','taxi'].indexOf(aba)+1})`).classList.add('active');
+            const index = ['noticias','comer','mototaxi','taxi'].indexOf(aba);
+            if(index >= 0 && !modoApp) {
+                document.querySelectorAll('.tab')[index]?.classList.add('active');
+            }
             carregarConteudo();
         }
 
@@ -144,8 +152,8 @@
             `;
         }
 
-        function renderNoticia(n, i, total) {
-            let html = `
+        function renderNoticia(n) {
+            return `
                 <div class="noticia">
                     <h2>${n.titulo}</h2>
                     <div class="data">${n.data}</div>
@@ -154,7 +162,6 @@
                     <div class="texto-noticia">${n.texto.replace(/\n/g, '<br>')}</div>
                 </div>
             `;
-            return html;
         }
 
         function carregarConteudo() {
@@ -168,7 +175,7 @@
                 ]).then(([noticias, anuncios]) => {
                     let html = '';
                     noticias.forEach((n, i) => {
-                        html += renderNoticia(n, i, noticias.length);
+                        html += renderNoticia(n);
                         if(i === 1 && anuncios[0]) html += getAnuncioHTML(anuncios[0]);
                         if(i === 4 && anuncios[1]) html += getAnuncioHTML(anuncios[1]);
                     });
@@ -178,11 +185,10 @@
                     container.innerHTML = '<p style="text-align:center; padding:40px; color:red;">Erro ao carregar. Verifique sua conexão.</p>';
                 });
             } else {
-                // Carrega JSON do serviço: comer.json, mototaxi.json, taxi.json
                 fetch(abaAtual + '.json?v=' + Date.now())
                     .then(r => r.json())
                     .then(itens => {
-                        let html = `<h2 style="color:#0066cc; margin-bottom:16px;">${tituloAba(abaAtual)}</h2>`;
+                        let html = modoApp ? '' : `<h2 style="color:#0066cc; margin-bottom:16px;">${tituloAba(abaAtual)}</h2>`;
                         if(itens.length === 0) {
                             html += '<p style="text-align:center; padding:30px; color:#666;">Nenhum cadastro ainda. Volte em breve!</p>';
                         } else {
@@ -215,11 +221,25 @@
             `;
         }
 
-        // Inicializa: verifica se veio parametro ?aba=xxx do app
+        // ═══════════════════════════════════════════════════════════════
+        // INICIALIZAÇÃO: detecta se veio do app ou do navegador
+        // ═══════════════════════════════════════════════════════════════
         const abaParam = getParametroURL('aba');
-        if(abaParam && ['noticias','comer','mototaxi','taxi'].includes(abaParam)) {
-            mudarAba(abaParam);
+
+        if(abaParam) {
+            // VEIO DO APP: esconde abas, carrega conteúdo direto
+            modoApp = true;
+            document.body.classList.remove('modo-site');
+            if(['noticias','comer','mototaxi','taxi'].includes(abaParam)) {
+                abaAtual = abaParam;
+                carregarConteudo();
+            } else {
+                carregarConteudo();
+            }
         } else {
+            // VEIO DO NAVEGADOR: mostra abas normalmente
+            modoApp = false;
+            document.body.classList.add('modo-site');
             carregarConteudo();
         }
     </script>
