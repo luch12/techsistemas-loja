@@ -3,38 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia Salvaterra - Notícias Culturais</title>
+    <title>Guia Salvaterra</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Arial; background: #e6f7ff; }
-        header { background: linear-gradient(135deg, #0066cc, #004a99); color: white; padding: 25px 15px; text-align: center; }
-        header h1 { font-size: 28px; }
-        header p { font-size: 14px; opacity: 0.9; }
-     .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
-     .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0,08); }
-     .noticia img,.noticia video,.noticia iframe { width: 100%; border-radius: 8px; margin: 15px 0; }
-     .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 15px 0; }
-     .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-     .social-card { display: block; text-decoration: none; border: 2px solid #eee; border-radius: 8px; padding: 10px; margin: 15px 0; }
-     .social-card p { text-align:center; color:#0066cc; font-weight:bold; margin-top:8px; }
-     .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
-     .data { color: #888; font-size: 13px; margin-bottom: 10px; }
-     .texto-noticia {
-            text-align: justify!important;
-            line-height: 1.7!important;
-            color: #333!important;
-            font-size: 16px!important;
-            display: block;
+        header { background: linear-gradient(135deg, #0066cc, #004a99); color: white; padding: 20px 15px; text-align: center; }
+        header h1 { font-size: 24px; }
+        header p { font-size: 13px; opacity: 0.9; }
+
+        /* ABAS */
+        .tabs {
+            display: flex;
+            background: #004a99;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .tab {
+            flex: 1;
+            min-width: 80px;
+            padding: 14px 10px;
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            background: none;
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+        }
+        .tab.active {
+            color: white;
+            border-bottom: 3px solid #FF6F00;
+            background: rgba(255,255,255,0.1);
         }
 
-        /* ESTILO DO ANÚNCIO */
-      .anuncio-box { background: white; padding: 15px; margin: 25px 0; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); border-left: 4px solid #25D366; }
-      .anuncio-tag { font-size: 10px; color: #888; text-align: center; margin-bottom: 8px; letter-spacing: 1px; }
-      .anuncio-img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
-      .anuncio-titulo { color: #0066cc; text-align: center; font-size: 18px; margin-bottom: 5px; }
-      .anuncio-texto { text-align: center; color: #333; margin: 8px 0 12px; font-size: 14px; }
-      .anuncio-btn { display: block; background: #25D366; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; }
-      .anuncio-btn:hover { background: #128C7E; }
+        .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
+        .noticia { background: white; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
+        .noticia img,.noticia video,.noticia iframe { width: 100%; border-radius: 8px; margin: 15px 0; }
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 15px 0; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .social-card { display: block; text-decoration: none; border: 2px solid #eee; border-radius: 8px; padding: 10px; margin: 15px 0; }
+        .social-card p { text-align:center; color:#0066cc; font-weight:bold; margin-top:8px; }
+        .noticia h2 { color: #0066cc; margin-bottom: 8px; font-size: 22px; }
+        .data { color: #888; font-size: 13px; margin-bottom: 10px; }
+        .texto-noticia { text-align: justify!important; line-height: 1.7!important; color: #333!important; font-size: 16px!important; display: block; }
+
+        /* CARD DE SERVIÇO (Comer/Mototaxi/Taxi) */
+        .servico-card { background: white; padding: 16px; margin-bottom: 15px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; gap: 14px; align-items: center; }
+        .servico-card img { width: 80px; height: 80px; border-radius: 10px; object-fit: cover; flex-shrink: 0; }
+        .servico-info { flex: 1; }
+        .servico-info h3 { color: #0066cc; font-size: 17px; margin-bottom: 4px; }
+        .servico-info p { color: #555; font-size: 14px; line-height: 1.5; }
+        .servico-btn { display: inline-block; margin-top: 8px; background: #25D366; color: white; padding: 8px 16px; border-radius: 20px; text-decoration: none; font-size: 13px; font-weight: bold; }
+        .servico-btn.ligar { background: #0066cc; }
+
+        .anuncio-box { background: white; padding: 15px; margin: 25px 0; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); border-left: 4px solid #25D366; }
+        .anuncio-tag { font-size: 10px; color: #888; text-align: center; margin-bottom: 8px; letter-spacing: 1px; }
+        .anuncio-img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+        .anuncio-titulo { color: #0066cc; text-align: center; font-size: 18px; margin-bottom: 5px; }
+        .anuncio-texto { text-align: center; color: #333; margin: 8px 0 12px; font-size: 14px; }
+        .anuncio-btn { display: block; background: #25D366; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; }
 
         footer { text-align: center; padding: 20px; color: #777; font-size: 12px; }
     </style>
@@ -42,57 +71,139 @@
 <body>
     <header>
         <h1>🌴 Guia Salvaterra</h1>
-        <p>Notícias Culturais e Eventos de Salvaterra - PA</p>
+        <p>Tudo sobre a Ilha do Marajó</p>
     </header>
 
-    <div class="container" id="noticias">
-        <p style="text-align:center; padding:40px;">Carregando notícias...</p>
+    <!-- ABAS -->
+    <div class="tabs">
+        <button class="tab active" onclick="mudarAba('noticias')">📰 Notícias</button>
+        <button class="tab" onclick="mudarAba('comer')">🍽️ Comer</button>
+        <button class="tab" onclick="mudarAba('mototaxi')">🏍️ Mototáxi</button>
+        <button class="tab" onclick="mudarAba('taxi')">🚕 Táxi</button>
     </div>
 
-    <footer>
-        © 2026 Guia Salvaterra
-    </footer>
+    <div class="container" id="conteudo">
+        <p style="text-align:center; padding:40px;">Carregando...</p>
+    </div>
+
+    <footer>© 2026 Guia Salvaterra</footer>
 
     <script>
+        let abaAtual = 'noticias';
+
+        function getParametroURL(nome) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(nome);
+        }
+
+        function mudarAba(aba) {
+            abaAtual = aba;
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`.tab:nth-child(${['noticias','comer','mototaxi','taxi'].indexOf(aba)+1})`).classList.add('active');
+            carregarConteudo();
+        }
+
         function getVideoEmbed(url) {
             if(!url) return '';
-
-            // YOUTUBE
             if(url.includes('youtube.com') || url.includes('youtu.be')) {
                 let videoId = url.split('v=')[1] || url.split('/').pop();
                 if(videoId.includes('&')) videoId = videoId.split('&')[0];
                 if(videoId.includes('shorts/')) videoId = videoId.split('shorts/')[1];
-                return `<div class="video-wrapper"><iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
+                return `<div class="video-wrapper"><iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe></div>`;
             }
-
-            // TIKTOK e KWAI
             if(url.includes('tiktok.com') || url.includes('kwai.com')) {
                 return `<div class="video-wrapper"><iframe src="${url}" frameborder="0" allowfullscreen></iframe></div>`;
             }
-
-            // INSTAGRAM, FACEBOOK, TWITTER/X - Abre no app e não dá erro
             if(url.includes('instagram.com') || url.includes('facebook.com') || url.includes('x.com') || url.includes('twitter.com')) {
                 let rede = 'Rede Social';
                 if(url.includes('instagram')) rede = 'Instagram';
                 if(url.includes('facebook')) rede = 'Facebook';
                 if(url.includes('twitter') || url.includes('x.com')) rede = 'X/Twitter';
-
-                return `<a href="${url}" target="_blank" class="social-card">
-                    <img src="https://via.placeholder.com/1280x720/0066cc/FFFFFF?text=Assista+no+${rede}" style="width:100%; border-radius:8px;">
-                    <p>▶️ Toque para assistir no ${rede}</p>
-                </a>`;
+                return `<a href="${url}" target="_blank" class="social-card"><img src="https://via.placeholder.com/1280x720/0066cc/FFFFFF?text=Assista+no+${rede}" style="width:100%; border-radius:8px;"><p>▶️ Toque para assistir no ${rede}</p></a>`;
             }
-
-            // VIDEO MP4 NORMAL
             return `<video src="${url}" controls playsinline style="width:100%"></video>`;
         }
 
+        function renderServico(item) {
+            const zapLink = item.whatsapp ? `https://wa.me/${item.whatsapp.replace(/\D/g,'')}?text=Olá! Vi no Guia Salvaterra.` : '';
+            const telLink = item.telefone ? `tel:${item.telefone.replace(/\D/g,'')}` : '';
+            
+            return `
+                <div class="servico-card">
+                    <img src="${item.imagem || 'https://via.placeholder.com/80/0066cc/FFFFFF?text=' + encodeURIComponent(item.titulo[0])}" alt="${item.titulo}">
+                    <div class="servico-info">
+                        <h3>${item.titulo}</h3>
+                        <p>${item.texto.replace(/\n/g,'<br>')}</p>
+                        ${item.endereco ? `<p style="color:#888; font-size:12px; margin-top:4px;">📍 ${item.endereco}</p>` : ''}
+                        <div style="margin-top:6px;">
+                            ${zapLink ? `<a href="${zapLink}" class="servico-btn">💬 WhatsApp</a>` : ''}
+                            ${telLink ? `<a href="${telLink}" class="servico-btn ligar" style="margin-left:6px;">📞 Ligar</a>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderNoticia(n, i, total) {
+            let html = `
+                <div class="noticia">
+                    <h2>${n.titulo}</h2>
+                    <div class="data">${n.data}</div>
+                    ${n.imagem? `<img src="${n.imagem}" alt="${n.titulo}">` : ''}
+                    ${getVideoEmbed(n.video)}
+                    <div class="texto-noticia">${n.texto.replace(/\n/g, '<br>')}</div>
+                </div>
+            `;
+            return html;
+        }
+
+        function carregarConteudo() {
+            const container = document.getElementById('conteudo');
+            container.innerHTML = '<p style="text-align:center; padding:40px;">Carregando...</p>';
+
+            if (abaAtual === 'noticias') {
+                Promise.all([
+                    fetch('noticias.json?v=' + Date.now()).then(r => r.json()),
+                    fetch('anuncios.json?v=' + Date.now()).then(r => r.json()).catch(() => [])
+                ]).then(([noticias, anuncios]) => {
+                    let html = '';
+                    noticias.forEach((n, i) => {
+                        html += renderNoticia(n, i, noticias.length);
+                        if(i === 1 && anuncios[0]) html += getAnuncioHTML(anuncios[0]);
+                        if(i === 4 && anuncios[1]) html += getAnuncioHTML(anuncios[1]);
+                    });
+                    if(anuncios[2]) html += getAnuncioHTML(anuncios[2]);
+                    container.innerHTML = html || '<p style="text-align:center; padding:40px;">Nenhuma notícia no momento.</p>';
+                }).catch(() => {
+                    container.innerHTML = '<p style="text-align:center; padding:40px; color:red;">Erro ao carregar. Verifique sua conexão.</p>';
+                });
+            } else {
+                // Carrega JSON do serviço: comer.json, mototaxi.json, taxi.json
+                fetch(abaAtual + '.json?v=' + Date.now())
+                    .then(r => r.json())
+                    .then(itens => {
+                        let html = `<h2 style="color:#0066cc; margin-bottom:16px;">${tituloAba(abaAtual)}</h2>`;
+                        if(itens.length === 0) {
+                            html += '<p style="text-align:center; padding:30px; color:#666;">Nenhum cadastro ainda. Volte em breve!</p>';
+                        } else {
+                            itens.forEach(item => html += renderServico(item));
+                        }
+                        container.innerHTML = html;
+                    })
+                    .catch(() => {
+                        container.innerHTML = '<p style="text-align:center; padding:40px; color:red;">Erro ao carregar lista. Verifique sua conexão.</p>';
+                    });
+            }
+        }
+
+        function tituloAba(aba) {
+            const map = { comer: '🍽️ Onde Comer', mototaxi: '🏍️ Mototáxis', taxi: '🚕 Táxis' };
+            return map[aba] || aba;
+        }
+
         function getAnuncioHTML(anuncio) {
-            if(!anuncio ||!anuncio.ativo) return '';
-
-            // Link direto pro WhatsApp usando o número do JSON
-            const linkWhats = `https://wa.me/${anuncio.telefone}?text=Olá! Vi seu anúncio no Guia Salvaterra e quero mais informações.`;
-
+            if(!anuncio || !anuncio.ativo) return '';
+            const linkWhats = `https://wa.me/${anuncio.telefone}?text=Olá! Vi seu anúncio no Guia Salvaterra.`;
             return `
                 <div class="anuncio-box">
                     <div class="anuncio-tag">PUBLICIDADE</div>
@@ -104,36 +215,13 @@
             `;
         }
 
-        // Carrega notícias E anúncios
-        Promise.all([
-            fetch('noticias.json?v=' + new Date().getTime()).then(res => res.json()),
-            fetch('anuncios.json?v=' + new Date().getTime()).then(res => res.json()).catch(() => [])
-        ])
-     .then(([noticias, anuncios]) => {
-            let html = '';
-            noticias.forEach((n, i) => {
-                html += `
-                    <div class="noticia">
-                        <h2>${n.titulo}</h2>
-                        <div class="data">${n.data}</div>
-                        ${n.imagem? `<img src="${n.imagem}" alt="${n.titulo}">` : ''}
-                        ${getVideoEmbed(n.video)}
-                        <div class="texto-noticia">${n.texto.replace(/\n/g, '<br>')}</div>
-                    </div>
-                `;
-
-                // Insere anúncio depois da 2ª e 5ª notícia
-                if(i === 1 && anuncios[0]) html += getAnuncioHTML(anuncios[0]);
-                if(i === 4 && anuncios[1]) html += getAnuncioHTML(anuncios[1]);
-            });
-
-            // Anúncio no final
-            if(anuncios[2]) html += getAnuncioHTML(anuncios[2]);
-
-            document.getElementById('noticias').innerHTML = html;
-        }).catch(err => {
-            document.getElementById('noticias').innerHTML = '<p style="text-align:center; padding:40px; color:red;">Erro ao carregar notícias. Verifique sua conexão.</p>';
-        });
+        // Inicializa: verifica se veio parametro ?aba=xxx do app
+        const abaParam = getParametroURL('aba');
+        if(abaParam && ['noticias','comer','mototaxi','taxi'].includes(abaParam)) {
+            mudarAba(abaParam);
+        } else {
+            carregarConteudo();
+        }
     </script>
 </body>
 </html>
