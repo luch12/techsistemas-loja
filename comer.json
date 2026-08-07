@@ -1,0 +1,18 @@
+[
+    {
+        "titulo": "Restaurante Marajó",
+        "texto": "Peixe frito na brasa, camarão regional e o famoso tacacá. Ambiente familiar com vista para a orla.",
+        "imagem": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400",
+        "endereco": "Orla da Praia Grande, Salvaterra",
+        "whatsapp": "5593999991111",
+        "telefone": "(93) 99999-1111"
+    },
+    {
+        "titulo": "Bar do Boi",
+        "texto": "Especialidade em carne de búfalo. Porções generosas e preço justo. Funciona até tarde.",
+        "imagem": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400",
+        "endereco": "Centro de Salvaterra",
+        "whatsapp": "5593999992222",
+        "telefone": "(93) 99999-2222"
+    }
+]

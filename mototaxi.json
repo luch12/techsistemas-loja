@@ -1,0 +1,18 @@
+[
+    {
+        "titulo": "Moto Táxi do João",
+        "texto": "Disponível de segunda a sábado. Corridas dentro da cidade e para os distritos.",
+        "imagem": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=400",
+        "endereco": "Ponto central - Praça",
+        "whatsapp": "5593999993333",
+        "telefone": "(93) 99999-3333"
+    },
+    {
+        "titulo": "Motofretes Rápidos",
+        "texto": "Entregas e corridas rápidas. Atende toda a ilha.",
+        "imagem": "https://images.unsplash.com/photo-1619771914272-e3c1ba17ba4d?w=400",
+        "endereco": "Bairro Tartarugão",
+        "whatsapp": "5593999994444",
+        "telefone": "(93) 99999-4444"
+    }
+]
