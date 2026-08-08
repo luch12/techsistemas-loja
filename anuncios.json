@@ -1,5 +1,41 @@
 [
   {
+    "id": 1,
+    "ativo": true,
+    "titulo": "Farmácia Popular",
+    "texto": "Remédios, perfumaria e entrega grátis no centro de Salvaterra",
+    "imagem": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80",
+    "telefone": "91988887777",
+    "botao": "Falar no WhatsApp"
+  },
+  {
+    "id": 2,
+    "ativo": true,
+    "titulo": "Pousada Marajó",
+    "texto": "Diárias a partir de R$120. Piscina, Wi-Fi e café da manhã incluso.",
+    "imagem": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    "telefone": "91999998888",
+    "botao": "Reservar Agora"
+  },
+  {
+    "id": 3,
+    "ativo": true,
+    "titulo": "Restaurante do Zé",
+    "texto": "O melhor peixe frito da ilha! Também tem caranguejo e caldeirada.",
+    "imagem": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&q=80",
+    "telefone": "91977776666",
+    "botao": "Fazer Pedido"
+  },
+  {
+    "id": 4,
+    "ativo": true,
+    "titulo": "Praia Grande Beach Club",
+    "texto": "Barracas, música ao vivo e o pôr do sol mais lindo do Marajó.",
+    "imagem": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+    "telefone": "91955554444",
+    "botao": "Ver Localização"
+  },
+  {
   "id": 99,
   "ativo": true,
   "titulo": "Anuncie no Guia Salvaterra",
