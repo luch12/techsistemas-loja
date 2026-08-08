@@ -132,13 +132,20 @@
             return `<video src="${url}" controls playsinline style="width:100%"></video>`;
         }
 
+        // Helper: adiciona cache-buster em qualquer URL de imagem
+        function imgUrl(url) {
+            if(!url) return '';
+            const sep = url.includes('?') ? '&' : '?';
+            return url + sep + 'v=' + Date.now();
+        }
+
         function renderServico(item) {
             const zapLink = item.whatsapp ? `https://wa.me/${item.whatsapp.replace(/\D/g,'')}?text=Olá! Vi no Guia Salvaterra.` : '';
             const telLink = item.telefone ? `tel:${item.telefone.replace(/\D/g,'')}` : '';
             
             return `
                 <div class="servico-card">
-                    <img src="${item.imagem || 'https://via.placeholder.com/80/0066cc/FFFFFF?text=' + encodeURIComponent(item.titulo[0])}" alt="${item.titulo}">
+                    <img src="${imgUrl(item.imagem) || 'https://via.placeholder.com/80/0066cc/FFFFFF?text=' + encodeURIComponent(item.titulo[0])}" alt="${item.titulo}">
                     <div class="servico-info">
                         <h3>${item.titulo}</h3>
                         <p>${item.texto.replace(/\n/g,'<br>')}</p>
@@ -157,7 +164,7 @@
                 <div class="noticia">
                     <h2>${n.titulo}</h2>
                     <div class="data">${n.data}</div>
-                    ${n.imagem? `<img src="${n.imagem}" alt="${n.titulo}">` : ''}
+                    ${n.imagem? `<img src="${imgUrl(n.imagem)}" alt="${n.titulo}">` : ''}
                     ${getVideoEmbed(n.video)}
                     <div class="texto-noticia">${n.texto.replace(/\n/g, '<br>')}</div>
                 </div>
@@ -213,7 +220,7 @@
             return `
                 <div class="anuncio-box">
                     <div class="anuncio-tag">PUBLICIDADE</div>
-                    <img src="${anuncio.imagem}" class="anuncio-img" alt="${anuncio.titulo}">
+                    <img src="${imgUrl(anuncio.imagem)}" class="anuncio-img" alt="${anuncio.titulo}">
                     <h3 class="anuncio-titulo">${anuncio.titulo}</h3>
                     <p class="anuncio-texto">${anuncio.texto}</p>
                     <a href="${linkWhats}" target="_blank" class="anuncio-btn">💬 ${anuncio.botao || 'Falar no WhatsApp'}</a>
