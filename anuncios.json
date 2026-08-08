@@ -36,6 +36,51 @@
     "botao": "Ver Localização"
   },
   {
+    "id": 5,
+    "ativo": true,
+    "titulo": "Barco Expresso Marajó",
+    "texto": "Passagens para Belém todos os dias. Conforto, segurança e horário marcado.",
+    "imagem": "https://images.unsplash.com/photo-1544551763-92ab472cad5d?w=800&q=80",
+    "telefone": "91933332222",
+    "botao": "Comprar Passagem"
+  },
+  {
+    "id": 6,
+    "ativo": true,
+    "titulo": "Mercado do Peixe Salvaterra",
+    "texto": "Peixe fresco direto do rio pro seu prato. Aberto de 5h às 12h.",
+    "imagem": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=800&q=80",
+    "telefone": "91922221111",
+    "botao": "Ver Preços"
+  },
+  {
+    "id": 7,
+    "ativo": true,
+    "titulo": "Salvaterra Moto Táxi",
+    "texto": "Corrida rápida pra qualquer bairro. Atendemos 24h. Entrega de documentos também.",
+    "imagem": "https://images.unsplash.com/photo-1558981403-c5fdb8401e9b?w=800&q=80",
+    "telefone": "91944443333",
+    "botao": "Chamar no WhatsApp"
+  },
+  {
+    "id": 8,
+    "ativo": true,
+    "titulo": "Loja Artesanato Marajoara",
+    "texto": "Cestaria, cerâmica e lembranças da ilha. Perfeito pra turista e pra presentear.",
+    "imagem": "https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=800&q=80",
+    "telefone": "91966667777",
+    "botao": "Ver Catálogo"
+  },
+  {
+    "id": 9,
+    "ativo": true,
+    "titulo": "Passeio de Barco Manguezal",
+    "texto": "Tour pelo rio, banho no igarapé e almoço regional. Saídas diárias às 9h.",
+    "imagem": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&q=80",
+    "telefone": "91988886655",
+    "botao": "Reservar Vaga"
+  },
+  {
   "id": 99,
   "ativo": true,
   "titulo": "Anuncie no Guia Salvaterra",
