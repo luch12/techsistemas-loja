@@ -1,0 +1,42 @@
+[
+  {
+    "id": "hospital-salvaterra",
+    "titulo": "Hospital Municipal de Salvaterra",
+    "descricao": "<p>O <strong>Hospital Municipal de Salvaterra</strong> é a principal unidade de saúde da cidade e da região do Marajó. Atende emergências 24h, realiza partos, pequenas cirurgias e atendimento clínico geral.</p><p>A unidade conta com pronto-socorro, sala de raio-X, laboratório de análises clínicas básicas, farmácia e ambulâncias para remoção. É referência para os municípios vizinhos de Soure, Cachoeira do Arari e Melgaço.</p><p><strong>Serviços:</strong> Pronto-socorro 24h, Clínica geral, Pediatria, Ginecologia/Obstetrícia, Raio-X, Laboratório, Farmácia básica.</p><p><strong>Endereço:</strong> Avenida da Saúde, s/n, Centro, Salvaterra, PA</p><p><strong>Contato:</strong> (91) 99999-6666</p>",
+    "localizacao": "Avenida da Saúde, s/n, Centro, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/hospital-salvaterra.jpg",
+    "ordem": 1
+  },
+  {
+    "id": "ubs-centro",
+    "titulo": "UBS do Centro",
+    "descricao": "<p>A <strong>UBS (Unidade Básica de Saúde) do Centro</strong> oferece atendimento preventivo e de rotina para a população. É o ponto de partida do SUS na cidade, realizando consultas médicas, vacinação, acompanhamento de gestantes e idosos.</p><p>A unidade também desenvolve programas de saúde da família, controle de doenças tropicais (como malária e leishmaniose) e campanhas de vacinação periódicas. Agentes comunitários de saúde fazem visitas domiciliares nas comunidades ribeirinhas próximas.</p><p><strong>Serviços:</strong> Consultas médicas, Vacinação, Acompanhamento pré-natal, Saúde da família, Odontologia básica, Farmácia.</p><p><strong>Endereço:</strong> Rua da Matriz, 78, Centro, Salvaterra, PA</p><p><strong>Contato:</strong> (91) 99999-7777</p>",
+    "localizacao": "Rua da Matriz, 78, Centro, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/ubs-centro.jpg",
+    "ordem": 2
+  },
+  {
+    "id": "farmacia-central",
+    "titulo": "Farmácia Central",
+    "descricao": "<p>A <strong>Farmácia Central</strong> é a farmácia mais completa de Salvaterra. Trabalha com medicamentos genéricos, de referência, produtos de higiene pessoal, itens de primeiros socorros e equipamentos médicos básicos.</p><p>A farmácia atende convênios do SUS para distribuição de medicamentos gratuitos e oferece serviço de delivery para o centro da cidade e bairros próximos. Também realiza aferição de pressão arterial e testes rápidos de glicemia.</p><p><strong>Serviços:</strong> Medicamentos, Produtos de higiene, Testes rápidos, Aferição de pressão, Delivery.</p><p><strong>Endereço:</strong> Avenida Beira Rio, 112, Centro, Salvaterra, PA</p><p><strong>Contato:</strong> (91) 99999-8888</p>",
+    "localizacao": "Avenida Beira Rio, 112, Centro, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/farmacia-central.jpg",
+    "ordem": 3
+  },
+  {
+    "id": "posto-saude-barra",
+    "titulo": "Posto de Saúde da Barra Velha",
+    "descricao": "<p>O <strong>Posto de Saúde da Barra Velha</strong> atende a comunidade ribeirinha e os moradores do bairro. É uma unidade menor, mas essencial para o atendimento de primeiros socorros, pequenas emergências e encaminhamentos ao hospital municipal.</p><p>O posto realiza atendimentos de enfermagem, curativos, vacinação infantil e acompanhamento de pacientes com hipertensão e diabetes. O acesso é feito por barco ou pela estrada de terra que liga ao centro.</p><p><strong>Serviços:</strong> Atendimento de enfermagem, Curativos, Vacinação, Acompanhamento de crônicos.</p><p><strong>Endereço:</strong> Comunidade Barra Velha, Salvaterra, PA</p><p><strong>Contato:</strong> (91) 99999-9999</p>",
+    "localizacao": "Comunidade Barra Velha, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/posto-barra.jpg",
+    "ordem": 4
+  },
+  {
+    "id": "clinica-vida",
+    "titulo": "Clínica Vida & Saúde",
+    "descricao": "<p>A <strong>Clínica Vida & Saúde</strong> é uma clínica particular que oferece atendimento em diversas especialidades médicas. É uma opção para quem busca agilidade no atendimento ou necessita de consultas com especialistas.</p><p>As especialidades disponíveis incluem cardiologia, ortopedia, dermatologia, otorrinolaringologia e clínica geral. A clínica também realiza exames laboratoriais e de imagem (ultrassonografia).</p><p><strong>Serviços:</strong> Consultas especializadas, Ultrassonografia, Exames laboratoriais, Eletrocardiograma.</p><p><strong>Endereço:</strong> Rua do Comércio, 88, Centro, Salvaterra, PA</p><p><strong>Contato:</strong> (91) 99999-0000</p>",
+    "localizacao": "Rua do Comércio, 88, Centro, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/clinica-vida.jpg",
+    "ordem": 5
+  }
+]

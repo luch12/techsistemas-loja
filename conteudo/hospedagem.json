@@ -1,0 +1,42 @@
+[
+  {
+    "id": "pousada-marajo",
+    "titulo": "Pousada Marajó",
+    "descricao": "<p>A <strong>Pousada Marajó</strong> é uma das mais tradicionais de Salvaterra. Localizada a poucos metros da Praia Grande, oferece quartos confortáveis com ar-condicionado, Wi-Fi e café da manhã regional.</p><p>O ambiente é familiar e acolhedor, com área de convivência, jardim tropical e estacionamento. O café da manhã inclui frutas da estação, tapioca, queijo coalho e o famoso <em>mingau de tapioca</em> marajoara.</p><p><strong>Serviços:</strong> Ar-condicionado, Wi-Fi, Café da manhã, Estacionamento, Lavanderia.</p><p><strong>Contato:</strong> (91) 99999-1111</p>",
+    "localizacao": "Rua da Praia, s/n, Centro, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/pousada-marajo.jpg",
+    "ordem": 1
+  },
+  {
+    "id": "pousada-brisa-amazonica",
+    "titulo": "Pousada Brisa Amazônica",
+    "descricao": "<p>A <strong>Pousada Brisa Amazônica</strong> encanta pelas vistas panorâmicas do Rio Amazonas. Situada em uma elevação próxima à orla, seus quartos possuem varandas com redes para contemplar o pôr do sol.</p><p>A decoração valoriza o artesanato local, com peças de cerâmica marajoara, redes de fibra de buriti e pinturas de artistas regionais. O restaurante serve pratos típicos como <em>manicoba</em>, <em>tacacá</em> e peixes grelhados na brasa.</p><p><strong>Serviços:</strong> Ar-condicionado, Restaurante, Bar, Passeios turísticos, Transfer.</p><p><strong>Contato:</strong> (91) 99999-2222</p>",
+    "localizacao": "Rua do Comércio, 45, Centro, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/pousada-brisa.jpg",
+    "ordem": 2
+  },
+  {
+    "id": "casa-salvaterra",
+    "titulo": "Casa de Hóspedes Salvaterra",
+    "descricao": "<p>A <strong>Casa de Hóspedes Salvaterra</strong> é uma opção econômica e acolhedora, ideal para mochileiros e grupos de amigos. Funciona em uma casa de madeira típica da arquitetura ribeirinha, com quartos coletivos e privativos.</p><p>O ambiente é descontraído, com cozinha compartilhada, área de churrasco e espaço para redes. A proprietária, Dona Raimunda, é conhecida por seu <em>bolo de macaxeira</em> e pelo café forte da manhã.</p><p><strong>Serviços:</strong> Cozinha compartilhada, Área de churrasco, Wi-Fi, Aluguel de bicicletas.</p><p><strong>Contato:</strong> (91) 99999-3333</p>",
+    "localizacao": "Travessa da Matriz, 12, Centro, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/casa-salvaterra.jpg",
+    "ordem": 3
+  },
+  {
+    "id": "hotel-amazonia",
+    "titulo": "Hotel Amazônia Palace",
+    "descricao": "<p>O <strong>Hotel Amazônia Palace</strong> é a opção mais completa de hospedagem em Salvaterra. Com estrutura de hotel, oferece apartamentos com TV a cabo, frigobar, ar-condicionado split e room service.</p><p>O hotel conta com piscina, academia básica, salão de eventos e business center. O restaurante <em>Palácio Verde</em> serve bufê de café da manhã e almoço com opções regionais e internacionais.</p><p>É a escolha ideal para viajantes a negócios, famílias e quem busca mais conforto durante a estadia na ilha.</p><p><strong>Serviços:</strong> Piscina, Academia, Restaurante, Room service, Estacionamento coberto, Lavanderia, Eventos.</p><p><strong>Contato:</strong> (91) 99999-4444</p>",
+    "localizacao": "Avenida Beira Rio, 200, Centro, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/hotel-amazonia.jpg",
+    "ordem": 4
+  },
+  {
+    "id": "camping-praia-grande",
+    "titulo": "Camping Praia Grande",
+    "descricao": "<p>O <strong>Camping Praia Grande</strong> é a escolha perfeita para quem quer acordar com o som das ondas do Amazonas. Localizado na própria orla da Praia Grande, oferece área demarcada para barracas e camping cars.</p><p>Há estrutura de banheiros com chuveiro, área de cozinha coberta e quiosques para aluguel. À noite, é comum rolar um <em>forró pé-de-serra</em> ou <em>carimbó</em> nos quiosques vizinhos.</p><p>Leve repelente e protetor solar. A melhor época para camping é durante a vazante (setembro a dezembro), quando a praia está mais extensa e seca.</p><p><strong>Serviços:</strong> Banheiros, Chuveiros, Área de cozinha, Quiosques, Segurança noturna.</p><p><strong>Contato:</strong> (91) 99999-5555</p>",
+    "localizacao": "Orla da Praia Grande, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/camping-praia.jpg",
+    "ordem": 5
+  }
+]
