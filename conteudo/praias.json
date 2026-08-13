@@ -4,7 +4,7 @@
     "titulo": "Praia Grande",
     "descricao": "<p>A <strong>Praia Grande</strong> é a praia mais famosa e movimentada de Salvaterra. Com aproximadamente 3 km de extensão, suas águas calmas e mornas são ideais para banho, especialmente durante a <em>vazante</em> do rio (de setembro a dezembro), quando a faixa de areia se expande consideravelmente.</p><p>Ao longo da orla, há quiosques que servem peixes frescos como <em>tucunaré</em>, <em>filhote</em> e <em>pirarucu</em>, além de bebidas regionais como o <em>bacuri</em> e <em>açaí</em>. A praia é palco de eventos culturais, festas juninas e competições de futebol de areia durante a alta temporada.</p><p><strong>Dica:</strong> Visite no final da tarde para apreciar o pôr do sol sobre o Rio Amazonas — um espetáculo inesquecível.</p>",
     "localizacao": "Praia Grande, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/praia-grande.jpg",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-grande.jpg",
     "ordem": 1
   },
   {
@@ -12,7 +12,7 @@
     "titulo": "Praia do Pesqueiro",
     "descricao": "<p>A <strong>Praia do Pesqueiro</strong> é um verdadeiro refúgio para quem busca tranquilidade e contato com a natureza. Localizada a cerca de 8 km do centro de Salvaterra, é acessível por estrada de terra ou de barco.</p><p>O nome vem da tradição pesqueira da região. É comum ver pescadores artesanais lançando suas redes ao amanhecer. A praia tem águas cristalinas durante a vazante e uma vegetação de manguezal preservada nas margens.</p><p>É perfeita para camping, piqueniques e prática de <em>kitesurf</em> nos meses de ventos fortes (agosto a novembro). Não há infraestrutura comercial, então leve água e provisões.</p>",
     "localizacao": "Praia do Pesqueiro, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/praia-pesqueiro.jpg",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-pesqueiro.jpg",
     "ordem": 2
   },
   {
@@ -20,7 +20,7 @@
     "titulo": "Praia da Barra Velha",
     "descricao": "<p>A <strong>Praia da Barra Velha</strong> fica na foz do igarapé de mesmo nome, onde as águas doces encontram o Rio Amazonas. É uma praia de águas mornas e correnteza suave, muito frequentada por famílias locais.</p><p>Durante a maré baixa, forma-se uma grande piscina natural perfeita para crianças. A região ao redor é rica em fauna, sendo possível avistar <em>botos-cor-de-rosa</em> e <em>guarás</em> (ibis-vermelhos) nos manguezais próximos.</p><p>Há pequenos barcos que fazem o transporte de moradores e turistas entre a praia e o centro da cidade.</p>",
     "localizacao": "Barra Velha, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/praia-barra-velha.jpg",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-barra-velha.jpg",
     "ordem": 3
   },
   {
@@ -28,7 +28,7 @@
     "titulo": "Praia de Jutuba",
     "descricao": "<p>A <strong>Praia de Jutuba</strong> é uma das mais preservadas de Salvaterra. Situada na comunidade de Jutuba, acesso é feito por trilha ou barco. Suas águas são extremamente calmas e a areia é fina e clara.</p><p>O local é cercado por floresta amazônica e manguezais, oferecendo excelentes oportunidades para observação de aves e passeios ecológicos. Durante a vazante, a praia se transforma em um vasto campo de areia branca.</p><p>É um destino indicado para quem busca ecoturismo e contemplação. Recomenda-se visitar com guia local.</p>",
     "localizacao": "Comunidade de Jutuba, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/praia-jutuba.jpg",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-jutuba.jpg",
     "ordem": 4
   },
   {
@@ -36,7 +36,7 @@
     "titulo": "Praia do Caju-Una",
     "descricao": "<p>A <strong>Praia do Caju-Una</strong> fica próxima à comunidade ribeirinha de mesmo nome. É uma praia de águas rasas e areia dourada, cercada por coqueiros e cajueiros nativos — daí o nome.</p><p>O local é ideal para banho, caminhadas pela orla e pesca de arremesso. A comunidade local oferece hospedagem simples em casas de moradores, proporcionando uma experiência autêntica de vida ribeirinha.</p><p>Durante a <em>enchente</em> (janeiro a junho), a praia fica submersa, restando apenas o deque das casas sobre palafitas.</p>",
     "localizacao": "Caju-Una, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/imagens/praia-cajuuna.jpg",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-cajuuna.jpg",
     "ordem": 5
   }
 ]
