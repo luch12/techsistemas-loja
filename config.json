@@ -1,10 +1,11 @@
 {
   "server_url": "https://pest-reason-morgan-whenever.trycloudflare.com",
-  "server_url_backup": null,
+  "server_url_backup": "http://bore.pub:49983",
   "active_tunnel": "cloudflared",
-  "backup_tunnel": null,
+  "backup_tunnel": "bore",
   "urls": [
-    "https://pest-reason-morgan-whenever.trycloudflare.com"
+    "https://pest-reason-morgan-whenever.trycloudflare.com",
+    "http://bore.pub:49983"
   ],
   "slots": [
     {
@@ -14,8 +15,8 @@
     },
     {
       "posicao": "reserva",
-      "tunnel": null,
-      "url": null
+      "tunnel": "bore",
+      "url": "http://bore.pub:49983"
     }
   ],
   "tunnels": {
@@ -23,8 +24,14 @@
       "url": "https://pest-reason-morgan-whenever.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T15:39:07.402Z"
+      "atualizadoEm": "2026-09-11T15:39:12.166Z"
+    },
+    "bore": {
+      "url": "http://bore.pub:49983",
+      "protocolo": "http",
+      "papel": "reserva",
+      "atualizadoEm": "2026-09-11T15:39:12.166Z"
     }
   },
-  "updated_at": "2026-09-11T15:39:07.402Z"
+  "updated_at": "2026-09-11T15:39:12.166Z"
 }
