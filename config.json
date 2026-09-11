@@ -1,11 +1,10 @@
 {
   "server_url": "http://bore.pub:65366",
-  "server_url_backup": "https://console.serveo.net",
+  "server_url_backup": null,
   "active_tunnel": "bore",
-  "backup_tunnel": "serveo",
+  "backup_tunnel": null,
   "urls": [
-    "http://bore.pub:65366",
-    "https://console.serveo.net"
+    "http://bore.pub:65366"
   ],
   "slots": [
     {
@@ -15,8 +14,8 @@
     },
     {
       "posicao": "reserva",
-      "tunnel": "serveo",
-      "url": "https://console.serveo.net"
+      "tunnel": null,
+      "url": null
     }
   ],
   "tunnels": {
@@ -24,14 +23,8 @@
       "url": "http://bore.pub:65366",
       "protocolo": "http",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T17:07:46.632Z"
-    },
-    "serveo": {
-      "url": "https://console.serveo.net",
-      "protocolo": "https",
-      "papel": "reserva",
-      "atualizadoEm": "2026-09-11T17:07:46.632Z"
+      "atualizadoEm": "2026-09-11T17:07:59.444Z"
     }
   },
-  "updated_at": "2026-09-11T17:07:46.632Z"
+  "updated_at": "2026-09-11T17:07:59.444Z"
 }
