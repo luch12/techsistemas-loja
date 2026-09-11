@@ -1,10 +1,11 @@
 {
   "server_url": "https://august-retirement-headlines-wonderful.trycloudflare.com",
-  "server_url_backup": null,
+  "server_url_backup": "http://bore.pub:23426",
   "active_tunnel": "cloudflared",
-  "backup_tunnel": null,
+  "backup_tunnel": "bore",
   "urls": [
-    "https://august-retirement-headlines-wonderful.trycloudflare.com"
+    "https://august-retirement-headlines-wonderful.trycloudflare.com",
+    "http://bore.pub:23426"
   ],
   "slots": [
     {
@@ -14,8 +15,8 @@
     },
     {
       "posicao": "reserva",
-      "tunnel": null,
-      "url": null
+      "tunnel": "bore",
+      "url": "http://bore.pub:23426"
     }
   ],
   "tunnels": {
@@ -23,8 +24,14 @@
       "url": "https://august-retirement-headlines-wonderful.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T00:18:16.476Z"
+      "atualizadoEm": "2026-09-11T00:18:17.980Z"
+    },
+    "bore": {
+      "url": "http://bore.pub:23426",
+      "protocolo": "http",
+      "papel": "reserva",
+      "atualizadoEm": "2026-09-11T00:18:17.980Z"
     }
   },
-  "updated_at": "2026-09-11T00:18:16.476Z"
+  "updated_at": "2026-09-11T00:18:17.980Z"
 }
