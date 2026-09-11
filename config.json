@@ -1,16 +1,16 @@
 {
-  "server_url": "https://joint-achieved-encouraged-thread.trycloudflare.com",
+  "server_url": "https://grove-garden-the-championship.trycloudflare.com",
   "server_url_backup": null,
   "active_tunnel": "cloudflared",
   "backup_tunnel": null,
   "urls": [
-    "https://joint-achieved-encouraged-thread.trycloudflare.com"
+    "https://grove-garden-the-championship.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "cloudflared",
-      "url": "https://joint-achieved-encouraged-thread.trycloudflare.com"
+      "url": "https://grove-garden-the-championship.trycloudflare.com"
     },
     {
       "posicao": "reserva",
@@ -20,11 +20,11 @@
   ],
   "tunnels": {
     "cloudflared": {
-      "url": "https://joint-achieved-encouraged-thread.trycloudflare.com",
+      "url": "https://grove-garden-the-championship.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T03:00:14.209Z"
+      "atualizadoEm": "2026-09-11T03:01:14.343Z"
     }
   },
-  "updated_at": "2026-09-11T03:00:14.209Z"
+  "updated_at": "2026-09-11T03:01:14.343Z"
 }
