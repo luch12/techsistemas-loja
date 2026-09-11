@@ -1,37 +1,30 @@
 {
-  "server_url": "http://bore.pub:36162",
-  "server_url_backup": "https://installation-exhibits-many-kenny.trycloudflare.com",
+  "server_url": "http://bore.pub:62436",
+  "server_url_backup": null,
   "active_tunnel": "bore",
-  "backup_tunnel": "cloudflared",
+  "backup_tunnel": null,
   "urls": [
-    "http://bore.pub:36162",
-    "https://installation-exhibits-many-kenny.trycloudflare.com"
+    "http://bore.pub:62436"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "bore",
-      "url": "http://bore.pub:36162"
+      "url": "http://bore.pub:62436"
     },
     {
       "posicao": "reserva",
-      "tunnel": "cloudflared",
-      "url": "https://installation-exhibits-many-kenny.trycloudflare.com"
+      "tunnel": null,
+      "url": null
     }
   ],
   "tunnels": {
     "bore": {
-      "url": "http://bore.pub:36162",
+      "url": "http://bore.pub:62436",
       "protocolo": "http",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T00:52:57.977Z"
-    },
-    "cloudflared": {
-      "url": "https://installation-exhibits-many-kenny.trycloudflare.com",
-      "protocolo": "https",
-      "papel": "reserva",
-      "atualizadoEm": "2026-09-11T00:52:57.977Z"
+      "atualizadoEm": "2026-09-11T01:11:10.569Z"
     }
   },
-  "updated_at": "2026-09-11T00:52:57.977Z"
+  "updated_at": "2026-09-11T01:11:10.569Z"
 }
