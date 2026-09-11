@@ -1,16 +1,16 @@
 {
-  "server_url": "https://firmware-trip-ser-development.trycloudflare.com",
+  "server_url": "https://cement-useful-cartridge-sister.trycloudflare.com",
   "server_url_backup": null,
   "active_tunnel": "cloudflared",
   "backup_tunnel": null,
   "urls": [
-    "https://firmware-trip-ser-development.trycloudflare.com"
+    "https://cement-useful-cartridge-sister.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "cloudflared",
-      "url": "https://firmware-trip-ser-development.trycloudflare.com"
+      "url": "https://cement-useful-cartridge-sister.trycloudflare.com"
     },
     {
       "posicao": "reserva",
@@ -20,11 +20,11 @@
   ],
   "tunnels": {
     "cloudflared": {
-      "url": "https://firmware-trip-ser-development.trycloudflare.com",
+      "url": "https://cement-useful-cartridge-sister.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T03:07:14.052Z"
+      "atualizadoEm": "2026-09-11T03:08:14.393Z"
     }
   },
-  "updated_at": "2026-09-11T03:07:14.052Z"
+  "updated_at": "2026-09-11T03:08:14.393Z"
 }
