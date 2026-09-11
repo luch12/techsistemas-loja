@@ -1,16 +1,16 @@
 {
-  "server_url": "http://bore.pub:7835",
+  "server_url": "http://bore.pub:36162",
   "server_url_backup": null,
   "active_tunnel": "bore",
   "backup_tunnel": null,
   "urls": [
-    "http://bore.pub:7835"
+    "http://bore.pub:36162"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "bore",
-      "url": "http://bore.pub:7835"
+      "url": "http://bore.pub:36162"
     },
     {
       "posicao": "reserva",
@@ -20,11 +20,11 @@
   ],
   "tunnels": {
     "bore": {
-      "url": "http://bore.pub:7835",
+      "url": "http://bore.pub:36162",
       "protocolo": "http",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T00:52:54.626Z"
+      "atualizadoEm": "2026-09-11T00:52:56.150Z"
     }
   },
-  "updated_at": "2026-09-11T00:52:54.626Z"
+  "updated_at": "2026-09-11T00:52:56.150Z"
 }
