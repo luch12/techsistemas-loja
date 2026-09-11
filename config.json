@@ -1,16 +1,16 @@
 {
-  "server_url": "https://sbjct-organizer-matched-meal.trycloudflare.com",
+  "server_url": "http://bore.pub:37089",
   "server_url_backup": null,
-  "active_tunnel": "cloudflared",
+  "active_tunnel": "bore",
   "backup_tunnel": null,
   "urls": [
-    "https://sbjct-organizer-matched-meal.trycloudflare.com"
+    "http://bore.pub:37089"
   ],
   "slots": [
     {
       "posicao": "principal",
-      "tunnel": "cloudflared",
-      "url": "https://sbjct-organizer-matched-meal.trycloudflare.com"
+      "tunnel": "bore",
+      "url": "http://bore.pub:37089"
     },
     {
       "posicao": "reserva",
@@ -19,12 +19,12 @@
     }
   ],
   "tunnels": {
-    "cloudflared": {
-      "url": "https://sbjct-organizer-matched-meal.trycloudflare.com",
-      "protocolo": "https",
+    "bore": {
+      "url": "http://bore.pub:37089",
+      "protocolo": "http",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T16:30:19.100Z"
+      "atualizadoEm": "2026-09-11T16:30:28.691Z"
     }
   },
-  "updated_at": "2026-09-11T16:30:19.100Z"
+  "updated_at": "2026-09-11T16:30:28.691Z"
 }
