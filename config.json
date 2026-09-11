@@ -1,10 +1,11 @@
 {
   "server_url": "http://bore.pub:23669",
-  "server_url_backup": null,
+  "server_url_backup": "https://unwrap-stephanie-polished-column.trycloudflare.com",
   "active_tunnel": "bore",
-  "backup_tunnel": null,
+  "backup_tunnel": "cloudflared",
   "urls": [
-    "http://bore.pub:23669"
+    "http://bore.pub:23669",
+    "https://unwrap-stephanie-polished-column.trycloudflare.com"
   ],
   "slots": [
     {
@@ -14,8 +15,8 @@
     },
     {
       "posicao": "reserva",
-      "tunnel": null,
-      "url": null
+      "tunnel": "cloudflared",
+      "url": "https://unwrap-stephanie-polished-column.trycloudflare.com"
     }
   ],
   "tunnels": {
@@ -23,8 +24,14 @@
       "url": "http://bore.pub:23669",
       "protocolo": "http",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T00:38:27.191Z"
+      "atualizadoEm": "2026-09-11T00:38:30.939Z"
+    },
+    "cloudflared": {
+      "url": "https://unwrap-stephanie-polished-column.trycloudflare.com",
+      "protocolo": "https",
+      "papel": "reserva",
+      "atualizadoEm": "2026-09-11T00:38:30.939Z"
     }
   },
-  "updated_at": "2026-09-11T00:38:27.191Z"
+  "updated_at": "2026-09-11T00:38:30.939Z"
 }
