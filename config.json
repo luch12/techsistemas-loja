@@ -1,16 +1,16 @@
 {
-  "server_url": "https://remained-turtle-western-provision.trycloudflare.com",
+  "server_url": "https://fundamental-jeffrey-acceptable-nano.trycloudflare.com",
   "server_url_backup": null,
   "active_tunnel": "cloudflared",
   "backup_tunnel": null,
   "urls": [
-    "https://remained-turtle-western-provision.trycloudflare.com"
+    "https://fundamental-jeffrey-acceptable-nano.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "cloudflared",
-      "url": "https://remained-turtle-western-provision.trycloudflare.com"
+      "url": "https://fundamental-jeffrey-acceptable-nano.trycloudflare.com"
     },
     {
       "posicao": "reserva",
@@ -20,11 +20,11 @@
   ],
   "tunnels": {
     "cloudflared": {
-      "url": "https://remained-turtle-western-provision.trycloudflare.com",
+      "url": "https://fundamental-jeffrey-acceptable-nano.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T09:56:39.962Z"
+      "atualizadoEm": "2026-09-11T10:04:38.268Z"
     }
   },
-  "updated_at": "2026-09-11T09:56:39.962Z"
+  "updated_at": "2026-09-11T10:04:38.268Z"
 }
