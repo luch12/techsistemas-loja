@@ -1,16 +1,16 @@
 {
-  "server_url": "https://fundamental-jeffrey-acceptable-nano.trycloudflare.com",
+  "server_url": "https://bids-len-choose-theories.trycloudflare.com",
   "server_url_backup": null,
   "active_tunnel": "cloudflared",
   "backup_tunnel": null,
   "urls": [
-    "https://fundamental-jeffrey-acceptable-nano.trycloudflare.com"
+    "https://bids-len-choose-theories.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "cloudflared",
-      "url": "https://fundamental-jeffrey-acceptable-nano.trycloudflare.com"
+      "url": "https://bids-len-choose-theories.trycloudflare.com"
     },
     {
       "posicao": "reserva",
@@ -20,11 +20,11 @@
   ],
   "tunnels": {
     "cloudflared": {
-      "url": "https://fundamental-jeffrey-acceptable-nano.trycloudflare.com",
+      "url": "https://bids-len-choose-theories.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T10:04:38.268Z"
+      "atualizadoEm": "2026-09-11T14:29:43.032Z"
     }
   },
-  "updated_at": "2026-09-11T10:04:38.268Z"
+  "updated_at": "2026-09-11T14:29:43.032Z"
 }
