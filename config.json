@@ -1,16 +1,16 @@
 {
-  "server_url": "http://bore.pub:49300",
+  "server_url": "https://api.trycloudflare.com",
   "server_url_backup": null,
-  "active_tunnel": "bore",
+  "active_tunnel": "cloudflared",
   "backup_tunnel": null,
   "urls": [
-    "http://bore.pub:49300"
+    "https://api.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
-      "tunnel": "bore",
-      "url": "http://bore.pub:49300"
+      "tunnel": "cloudflared",
+      "url": "https://api.trycloudflare.com"
     },
     {
       "posicao": "reserva",
@@ -19,12 +19,12 @@
     }
   ],
   "tunnels": {
-    "bore": {
-      "url": "http://bore.pub:49300",
-      "protocolo": "http",
+    "cloudflared": {
+      "url": "https://api.trycloudflare.com",
+      "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T00:33:52.107Z"
+      "atualizadoEm": "2026-09-11T00:38:24.649Z"
     }
   },
-  "updated_at": "2026-09-11T00:33:52.107Z"
+  "updated_at": "2026-09-11T00:38:24.649Z"
 }
