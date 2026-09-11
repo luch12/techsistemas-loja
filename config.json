@@ -1,16 +1,16 @@
 {
-  "server_url": "https://marine-carpet-perfume-paintball.trycloudflare.com",
+  "server_url": "https://joint-achieved-encouraged-thread.trycloudflare.com",
   "server_url_backup": null,
   "active_tunnel": "cloudflared",
   "backup_tunnel": null,
   "urls": [
-    "https://marine-carpet-perfume-paintball.trycloudflare.com"
+    "https://joint-achieved-encouraged-thread.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "cloudflared",
-      "url": "https://marine-carpet-perfume-paintball.trycloudflare.com"
+      "url": "https://joint-achieved-encouraged-thread.trycloudflare.com"
     },
     {
       "posicao": "reserva",
@@ -20,11 +20,11 @@
   ],
   "tunnels": {
     "cloudflared": {
-      "url": "https://marine-carpet-perfume-paintball.trycloudflare.com",
+      "url": "https://joint-achieved-encouraged-thread.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T02:59:13.740Z"
+      "atualizadoEm": "2026-09-11T03:00:14.209Z"
     }
   },
-  "updated_at": "2026-09-11T02:59:13.740Z"
+  "updated_at": "2026-09-11T03:00:14.209Z"
 }
