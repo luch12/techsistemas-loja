@@ -1,37 +1,30 @@
 {
-  "server_url": "http://bore.pub:62436",
-  "server_url_backup": "https://packet-expenditure-florence-conviction.trycloudflare.com",
-  "active_tunnel": "bore",
-  "backup_tunnel": "cloudflared",
+  "server_url": "https://checking-transition-temperature-extraordinary.trycloudflare.com",
+  "server_url_backup": null,
+  "active_tunnel": "cloudflared",
+  "backup_tunnel": null,
   "urls": [
-    "http://bore.pub:62436",
-    "https://packet-expenditure-florence-conviction.trycloudflare.com"
+    "https://checking-transition-temperature-extraordinary.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
-      "tunnel": "bore",
-      "url": "http://bore.pub:62436"
+      "tunnel": "cloudflared",
+      "url": "https://checking-transition-temperature-extraordinary.trycloudflare.com"
     },
     {
       "posicao": "reserva",
-      "tunnel": "cloudflared",
-      "url": "https://packet-expenditure-florence-conviction.trycloudflare.com"
+      "tunnel": null,
+      "url": null
     }
   ],
   "tunnels": {
-    "bore": {
-      "url": "http://bore.pub:62436",
-      "protocolo": "http",
-      "papel": "principal",
-      "atualizadoEm": "2026-09-11T01:11:14.484Z"
-    },
     "cloudflared": {
-      "url": "https://packet-expenditure-florence-conviction.trycloudflare.com",
+      "url": "https://checking-transition-temperature-extraordinary.trycloudflare.com",
       "protocolo": "https",
-      "papel": "reserva",
-      "atualizadoEm": "2026-09-11T01:11:14.484Z"
+      "papel": "principal",
+      "atualizadoEm": "2026-09-11T01:29:28.063Z"
     }
   },
-  "updated_at": "2026-09-11T01:11:14.484Z"
+  "updated_at": "2026-09-11T01:29:28.063Z"
 }
