@@ -1,16 +1,16 @@
 {
-  "server_url": "https://organic-room-teacher-quiet.trycloudflare.com",
+  "server_url": "https://granted-listprice-football-mardi.trycloudflare.com",
   "server_url_backup": null,
   "active_tunnel": "cloudflared",
   "backup_tunnel": null,
   "urls": [
-    "https://organic-room-teacher-quiet.trycloudflare.com"
+    "https://granted-listprice-football-mardi.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "cloudflared",
-      "url": "https://organic-room-teacher-quiet.trycloudflare.com"
+      "url": "https://granted-listprice-football-mardi.trycloudflare.com"
     },
     {
       "posicao": "reserva",
@@ -20,11 +20,11 @@
   ],
   "tunnels": {
     "cloudflared": {
-      "url": "https://organic-room-teacher-quiet.trycloudflare.com",
+      "url": "https://granted-listprice-football-mardi.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T09:21:58.865Z"
+      "atualizadoEm": "2026-09-11T09:31:18.264Z"
     }
   },
-  "updated_at": "2026-09-11T09:21:58.865Z"
+  "updated_at": "2026-09-11T09:31:18.264Z"
 }
