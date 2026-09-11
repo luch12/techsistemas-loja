@@ -1,10 +1,11 @@
 {
   "server_url": "https://pest-reason-morgan-whenever.trycloudflare.com",
-  "server_url_backup": null,
+  "server_url_backup": "https://console.serveo.net",
   "active_tunnel": "cloudflared",
-  "backup_tunnel": null,
+  "backup_tunnel": "serveo",
   "urls": [
-    "https://pest-reason-morgan-whenever.trycloudflare.com"
+    "https://pest-reason-morgan-whenever.trycloudflare.com",
+    "https://console.serveo.net"
   ],
   "slots": [
     {
@@ -14,8 +15,8 @@
     },
     {
       "posicao": "reserva",
-      "tunnel": null,
-      "url": null
+      "tunnel": "serveo",
+      "url": "https://console.serveo.net"
     }
   ],
   "tunnels": {
@@ -23,8 +24,14 @@
       "url": "https://pest-reason-morgan-whenever.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T15:38:35.197Z"
+      "atualizadoEm": "2026-09-11T15:38:52.868Z"
+    },
+    "serveo": {
+      "url": "https://console.serveo.net",
+      "protocolo": "https",
+      "papel": "reserva",
+      "atualizadoEm": "2026-09-11T15:38:52.868Z"
     }
   },
-  "updated_at": "2026-09-11T15:38:35.197Z"
+  "updated_at": "2026-09-11T15:38:52.868Z"
 }
