@@ -1,16 +1,16 @@
 {
-  "server_url": "https://tournament-spot-discussion-athens.trycloudflare.com",
+  "server_url": "https://certified-folding-res-futures.trycloudflare.com",
   "server_url_backup": null,
   "active_tunnel": "cloudflared",
   "backup_tunnel": null,
   "urls": [
-    "https://tournament-spot-discussion-athens.trycloudflare.com"
+    "https://certified-folding-res-futures.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "cloudflared",
-      "url": "https://tournament-spot-discussion-athens.trycloudflare.com"
+      "url": "https://certified-folding-res-futures.trycloudflare.com"
     },
     {
       "posicao": "reserva",
@@ -20,11 +20,11 @@
   ],
   "tunnels": {
     "cloudflared": {
-      "url": "https://tournament-spot-discussion-athens.trycloudflare.com",
+      "url": "https://certified-folding-res-futures.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T03:09:14.715Z"
+      "atualizadoEm": "2026-09-11T03:10:16.044Z"
     }
   },
-  "updated_at": "2026-09-11T03:09:14.715Z"
+  "updated_at": "2026-09-11T03:10:16.044Z"
 }
