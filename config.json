@@ -1,16 +1,16 @@
 {
-  "server_url": "https://protein-meters-associated-incorporated.trycloudflare.com",
+  "server_url": "https://interesting-nuts-work-visible.trycloudflare.com",
   "server_url_backup": null,
   "active_tunnel": "cloudflared",
   "backup_tunnel": null,
   "urls": [
-    "https://protein-meters-associated-incorporated.trycloudflare.com"
+    "https://interesting-nuts-work-visible.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "cloudflared",
-      "url": "https://protein-meters-associated-incorporated.trycloudflare.com"
+      "url": "https://interesting-nuts-work-visible.trycloudflare.com"
     },
     {
       "posicao": "reserva",
@@ -20,11 +20,11 @@
   ],
   "tunnels": {
     "cloudflared": {
-      "url": "https://protein-meters-associated-incorporated.trycloudflare.com",
+      "url": "https://interesting-nuts-work-visible.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T03:33:34.810Z"
+      "atualizadoEm": "2026-09-11T09:11:58.944Z"
     }
   },
-  "updated_at": "2026-09-11T03:33:34.810Z"
+  "updated_at": "2026-09-11T09:11:58.944Z"
 }
