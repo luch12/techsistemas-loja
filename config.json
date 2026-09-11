@@ -1,37 +1,30 @@
 {
-  "server_url": "http://bore.pub:37089",
-  "server_url_backup": "https://anaheim-transport-tire-helped.trycloudflare.com",
+  "server_url": "http://bore.pub:65366",
+  "server_url_backup": null,
   "active_tunnel": "bore",
-  "backup_tunnel": "cloudflared",
+  "backup_tunnel": null,
   "urls": [
-    "http://bore.pub:37089",
-    "https://anaheim-transport-tire-helped.trycloudflare.com"
+    "http://bore.pub:65366"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "bore",
-      "url": "http://bore.pub:37089"
+      "url": "http://bore.pub:65366"
     },
     {
       "posicao": "reserva",
-      "tunnel": "cloudflared",
-      "url": "https://anaheim-transport-tire-helped.trycloudflare.com"
+      "tunnel": null,
+      "url": null
     }
   ],
   "tunnels": {
     "bore": {
-      "url": "http://bore.pub:37089",
+      "url": "http://bore.pub:65366",
       "protocolo": "http",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T16:30:45.628Z"
-    },
-    "cloudflared": {
-      "url": "https://anaheim-transport-tire-helped.trycloudflare.com",
-      "protocolo": "https",
-      "papel": "reserva",
-      "atualizadoEm": "2026-09-11T16:30:45.628Z"
+      "atualizadoEm": "2026-09-11T17:07:42.515Z"
     }
   },
-  "updated_at": "2026-09-11T16:30:45.628Z"
+  "updated_at": "2026-09-11T17:07:42.515Z"
 }
