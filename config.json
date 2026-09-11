@@ -1,16 +1,16 @@
 {
-  "server_url": "https://optimal-informal-catalogue-emissions.trycloudflare.com",
+  "server_url": "https://diabetes-finals-remedy-trans.trycloudflare.com",
   "server_url_backup": null,
   "active_tunnel": "cloudflared",
   "backup_tunnel": null,
   "urls": [
-    "https://optimal-informal-catalogue-emissions.trycloudflare.com"
+    "https://diabetes-finals-remedy-trans.trycloudflare.com"
   ],
   "slots": [
     {
       "posicao": "principal",
       "tunnel": "cloudflared",
-      "url": "https://optimal-informal-catalogue-emissions.trycloudflare.com"
+      "url": "https://diabetes-finals-remedy-trans.trycloudflare.com"
     },
     {
       "posicao": "reserva",
@@ -20,11 +20,11 @@
   ],
   "tunnels": {
     "cloudflared": {
-      "url": "https://optimal-informal-catalogue-emissions.trycloudflare.com",
+      "url": "https://diabetes-finals-remedy-trans.trycloudflare.com",
       "protocolo": "https",
       "papel": "principal",
-      "atualizadoEm": "2026-09-11T01:29:40.489Z"
+      "atualizadoEm": "2026-09-11T02:24:54.426Z"
     }
   },
-  "updated_at": "2026-09-11T01:29:40.489Z"
+  "updated_at": "2026-09-11T02:24:54.426Z"
 }
