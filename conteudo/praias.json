@@ -2,41 +2,51 @@
   {
     "id": "praia-grande",
     "titulo": "Praia Grande",
-    "descricao": "<p>A <strong>Praia Grande</strong> é a praia mais famosa e movimentada de Salvaterra. Com aproximadamente 3 km de extensão, suas águas calmas e mornas são ideais para banho, especialmente durante a <em>vazante</em> do rio (de setembro a dezembro), quando a faixa de areia se expande consideravelmente.</p><p>Ao longo da orla, há quiosques que servem peixes frescos como <em>tucunaré</em>, <em>filhote</em> e <em>pirarucu</em>, além de bebidas regionais como o <em>bacuri</em> e <em>açaí</em>. A praia é palco de eventos culturais, festas juninas e competições de futebol de areia durante a alta temporada.</p><p><strong>Dica:</strong> Visite no final da tarde para apreciar o pôr do sol sobre o Rio Amazonas — um espetáculo inesquecível.</p>",
+    "descricao": "<p>A <strong>Praia Grande</strong> é a praia mais frequentada de Salvaterra, por ficar bem no centro do município. Tem cerca de 1,5 km de extensão, toda cercada por coqueiros, e águas mornas e calmas, boas para banho.</p><p>A orla tem calçadão, chuveiros, estacionamento, bares, restaurantes e lojas de artesanato. A praia divide espaço com o igarapé Caraparú, de águas frias, e ainda tem um farol que pode ser visitado.</p><p><strong>Dica:</strong> na vazante a faixa de areia aumenta bastante. Vale ver o fim de tarde na orla.</p>",
     "localizacao": "Praia Grande, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-grande.jpg",
+    "imagemUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ilha_do_Maraj%C3%B3,_Salvaterra,_Praia_Grande.jpg?width=1200",
+    "creditoImagem": "Foto: Karina Vieira de Melo / Wikimedia Commons (CC BY-SA 4.0)",
     "ordem": 1
   },
   {
-    "id": "praia-do-pesqueiro",
-    "titulo": "Praia do Pesqueiro",
-    "descricao": "<p>A <strong>Praia do Pesqueiro</strong> é um verdadeiro refúgio para quem busca tranquilidade e contato com a natureza. Localizada a cerca de 8 km do centro de Salvaterra, é acessível por estrada de terra ou de barco.</p><p>O nome vem da tradição pesqueira da região. É comum ver pescadores artesanais lançando suas redes ao amanhecer. A praia tem águas cristalinas durante a vazante e uma vegetação de manguezal preservada nas margens.</p><p>É perfeita para camping, piqueniques e prática de <em>kitesurf</em> nos meses de ventos fortes (agosto a novembro). Não há infraestrutura comercial, então leve água e provisões.</p>",
-    "localizacao": "Praia do Pesqueiro, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-pesqueiro.jpg",
+    "id": "praia-de-joanes",
+    "titulo": "Praia de Joanes",
+    "descricao": "<p>A <strong>Praia de Joanes</strong> fica na vila de Joanes, a cerca de 17 km do centro de Salvaterra. Tem areia branca e fina, vegetação rasteira e águas claras e salobras, com banho morno que ora é mais salgado, ora mais doce, conforme a maré e a época do ano.</p><p>A vila guarda as <strong>ruínas da igreja jesuítica</strong>, construída no século XVII e hoje um dos pontos históricos mais visitados do município. O movimento aumenta em feriados prolongados e férias.</p>",
+    "localizacao": "Vila de Joanes, Salvaterra, PA",
+    "imagemUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Beach_at_Joanes,_Ilha_de_Maraj%C3%B3_(3926447146).jpg?width=1200",
+    "creditoImagem": "Foto: Wikimedia Commons (veja autor e licença na página do arquivo)",
     "ordem": 2
   },
   {
-    "id": "praia-barra-velha",
-    "titulo": "Praia da Barra Velha",
-    "descricao": "<p>A <strong>Praia da Barra Velha</strong> fica na foz do igarapé de mesmo nome, onde as águas doces encontram o Rio Amazonas. É uma praia de águas mornas e correnteza suave, muito frequentada por famílias locais.</p><p>Durante a maré baixa, forma-se uma grande piscina natural perfeita para crianças. A região ao redor é rica em fauna, sendo possível avistar <em>botos-cor-de-rosa</em> e <em>guarás</em> (ibis-vermelhos) nos manguezais próximos.</p><p>Há pequenos barcos que fazem o transporte de moradores e turistas entre a praia e o centro da cidade.</p>",
-    "localizacao": "Barra Velha, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-barra-velha.jpg",
+    "id": "praia-do-araruna",
+    "titulo": "Praia do Araruna",
+    "descricao": "<p>A <strong>Praia do Araruna</strong> fica na região de Joanes e é uma opção tranquila e pouco frequentada. É cercada por manguezais, com acesso pelo Rio Araruna, e tem areia clara e batida, dunas e vegetação nativa.</p><p>As ondas costumam ser fracas no inverno e mais fortes no verão. A faixa de areia muda com a maré: com o rio mais cheio o banho é calmo, e na seca a praia se amplia e convida a longas caminhadas.</p><p><strong>Atenção:</strong> não há infraestrutura turística. Leve água e lanche, volte com todo o seu lixo e confira a maré com os moradores antes de ir.</p>",
+    "localizacao": "Araruna, Joanes, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-araruna.jpg",
     "ordem": 3
   },
   {
-    "id": "praia-jutuba",
-    "titulo": "Praia de Jutuba",
-    "descricao": "<p>A <strong>Praia de Jutuba</strong> é uma das mais preservadas de Salvaterra. Situada na comunidade de Jutuba, acesso é feito por trilha ou barco. Suas águas são extremamente calmas e a areia é fina e clara.</p><p>O local é cercado por floresta amazônica e manguezais, oferecendo excelentes oportunidades para observação de aves e passeios ecológicos. Durante a vazante, a praia se transforma em um vasto campo de areia branca.</p><p>É um destino indicado para quem busca ecoturismo e contemplação. Recomenda-se visitar com guia local.</p>",
-    "localizacao": "Comunidade de Jutuba, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-jutuba.jpg",
+    "id": "praia-de-monsaras",
+    "titulo": "Praia de Monsarás",
+    "descricao": "<p>A <strong>Praia de Monsarás</strong> fica no distrito de mesmo nome, uma das localidades mais antigas de Salvaterra, colonizada pelos frades jesuítas ainda no período colonial.</p><p>É uma boa opção para quem quer combinar praia e história, junto com a visita às ruínas de Joanes, e para fugir do movimento da Praia Grande.</p>",
+    "localizacao": "Monsarás, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-monsaras.jpg",
     "ordem": 4
   },
   {
-    "id": "praia-cajuuna",
-    "titulo": "Praia do Caju-Una",
-    "descricao": "<p>A <strong>Praia do Caju-Una</strong> fica próxima à comunidade ribeirinha de mesmo nome. É uma praia de águas rasas e areia dourada, cercada por coqueiros e cajueiros nativos — daí o nome.</p><p>O local é ideal para banho, caminhadas pela orla e pesca de arremesso. A comunidade local oferece hospedagem simples em casas de moradores, proporcionando uma experiência autêntica de vida ribeirinha.</p><p>Durante a <em>enchente</em> (janeiro a junho), a praia fica submersa, restando apenas o deque das casas sobre palafitas.</p>",
-    "localizacao": "Caju-Una, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-cajuuna.jpg",
+    "id": "praia-do-jubim",
+    "titulo": "Praia do Jubim",
+    "descricao": "<p>A <strong>Praia do Jubim</strong> fica no distrito de Jubim, em Salvaterra, e é indicada para quem quer conhecer o lado mais tranquilo e comunitário do município, longe da orla central.</p><p>É recomendável ir com um guia local de Salvaterra, que conhece os acessos e as melhores épocas para visitar.</p>",
+    "localizacao": "Jubim, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-jubim.jpg",
     "ordem": 5
+  },
+  {
+    "id": "praia-agua-boa",
+    "titulo": "Água Boa",
+    "descricao": "<p>A <strong>Água Boa</strong> é uma praia escondida dentro de Salvaterra, na região do distrito de Jubim. Seu igarapé oferece trilhas aquáticas em meio à floresta, para quem gosta de natureza e passeios tranquilos.</p><p>É um destino para contemplação e ecoturismo. Vá com um guia ou morador local e leve água e provisões.</p>",
+    "localizacao": "Água Boa, Jubim, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-agua-boa.jpg",
+    "ordem": 6
   }
 ]
