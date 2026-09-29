@@ -22,7 +22,8 @@
     "titulo": "Praia do Araruna",
     "descricao": "<p>A <strong>Praia do Araruna</strong> fica na região de Joanes e é uma opção tranquila e pouco frequentada. É cercada por manguezais, com acesso pelo Rio Araruna, e tem areia clara e batida, dunas e vegetação nativa.</p><p>As ondas costumam ser fracas no inverno e mais fortes no verão. A faixa de areia muda com a maré: com o rio mais cheio o banho é calmo, e na seca a praia se amplia e convida a longas caminhadas.</p><p><strong>Atenção:</strong> não há infraestrutura turística. Leve água e lanche, volte com todo o seu lixo e confira a maré com os moradores antes de ir.</p>",
     "localizacao": "Araruna, Joanes, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-araruna.jpg",
+    "imagemUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Praia_de_S%C3%A3o_Jo%C3%A3o1_(1408364414).jpg?width=1200",
+    "creditoImagem": "Foto ilustrativa (Praia de São João, Salvaterra) / Wikimedia Commons - trocar por foto real",
     "ordem": 3
   },
   {
@@ -38,15 +39,25 @@
     "titulo": "Praia do Jubim",
     "descricao": "<p>A <strong>Praia do Jubim</strong> fica no distrito de Jubim, em Salvaterra, e é indicada para quem quer conhecer o lado mais tranquilo e comunitário do município, longe da orla central.</p><p>É recomendável ir com um guia local de Salvaterra, que conhece os acessos e as melhores épocas para visitar.</p>",
     "localizacao": "Jubim, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-jubim.jpg",
+    "imagemUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Praia_de_S%C3%A3o_Jo%C3%A3o2_(1407477333).jpg?width=1200",
+    "creditoImagem": "Foto ilustrativa (Praia de São João, Salvaterra) / Wikimedia Commons - trocar por foto real",
     "ordem": 5
   },
   {
     "id": "praia-agua-boa",
     "titulo": "Água Boa",
-    "descricao": "<p>A <strong>Água Boa</strong> é uma praia escondida dentro de Salvaterra, na região do distrito de Jubim. Seu igarapé oferece trilhas aquáticas em meio à floresta, para quem gosta de natureza e passeios tranquilos.</p><p>É um destino para contemplação e ecoturismo. Vá com um guia ou morador local e leve água e provisões.</p>",
+    "descricao": "<p>A <strong>Água Boa</strong> é uma pequena vila com praia escondida em Salvaterra, na região do distrito de Jubim. Seu igarapé oferece trilhas aquáticas em meio à floresta, para quem gosta de natureza e passeios tranquilos.</p><p>Perto dali ficam a praia nativa de Cururu e a Ilha Cagada. É um destino para contemplação e ecoturismo. Vá com um guia ou morador local e leve água e provisões.</p>",
     "localizacao": "Água Boa, Jubim, Salvaterra, PA",
-    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/praia-agua-boa.jpg",
+    "imagemUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Praia_de_S%C3%A3o_Jo%C3%A3o3_(1407456893).jpg?width=1200",
+    "creditoImagem": "Foto ilustrativa (Praia de São João, Salvaterra) / Wikimedia Commons - trocar por foto real",
     "ordem": 6
+  },
+  {
+    "id": "ilha-cagada",
+    "titulo": "Ilha Cagada",
+    "descricao": "<p>Apesar do nome curioso, a <strong>Ilha Cagada</strong> surpreende: tem areia clara, água limpa e vegetação praticamente intacta. Fica perto da vila de Água Boa e faz parte do circuito de praias mais isoladas de Salvaterra.</p><p>É um passeio para quem gosta de lugares selvagens e sem estrutura. Combine o acesso e a maré com moradores ou guias locais e leve água, lanche e sacola para levar o lixo de volta.</p>",
+    "localizacao": "Ilha Cagada, Água Boa, Salvaterra, PA",
+    "imagemUrl": "https://luch12.github.io/techsistemas-loja/Imagens/ilha-cagada.jpg",
+    "ordem": 7
   }
 ]
